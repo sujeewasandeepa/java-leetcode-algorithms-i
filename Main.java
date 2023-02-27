@@ -21,6 +21,16 @@ public class Main {
         RotateArray.Solution ra = new RotateArray.Solution();
         int[] valRA = ra.rotate(ra.caseTwo.getNums(), ra.caseTwo.getTarget());
         printArray(valRA);
+
+        MoveZeroes.Solution mz = new MoveZeroes.Solution();
+        int[] valMZ = mz.moveZeroes(mz.caseOne.getNums());
+        System.out.println("---- Move Zeroes ----");
+        printArray(valMZ);
+
+        TwoSum2.Solution ts2 = new TwoSum2.Solution();
+        int[] valTS2 = ts2.twoSum(ts2.caseTwo.getNums(), ts2.caseTwo.getTarget());
+        System.out.println("---- Two Sum 2 ----");
+        printArray(valTS2);
     }
 
     public static <T> void printArray(T[] arr) {
