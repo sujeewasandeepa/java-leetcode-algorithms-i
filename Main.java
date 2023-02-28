@@ -31,6 +31,11 @@ public class Main {
         int[] valTS2 = ts2.twoSum(ts2.caseTwo.getNums(), ts2.caseTwo.getTarget());
         System.out.println("---- Two Sum 2 ----");
         printArray(valTS2);
+
+        ReverseString.Solution rs = new ReverseString.Solution();
+        char[] valRS = rs.reverseString(rs.caseTwo.getChars());
+        System.out.println("---- Reverse String ----");
+        printArray(valRS);
     }
 
     public static <T> void printArray(T[] arr) {
@@ -42,6 +47,13 @@ public class Main {
 
     public static void printArray(int[] arr) {
         for (int element : arr) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(char[] arr) {
+        for (char element : arr) {
             System.out.print(element + " ");
         }
         System.out.println();
