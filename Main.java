@@ -36,6 +36,11 @@ public class Main {
         char[] valRS = rs.reverseString(rs.caseTwo.getChars());
         System.out.println("---- Reverse String ----");
         printArray(valRS);
+
+        ReverseWords.Solution rw = new ReverseWords.Solution();
+        String valRW = rw.reverseWords(rw.caseOne.getS());
+        System.out.println("---- Reverse Words ----");
+        System.out.println(valRW);
     }
 
     public static <T> void printArray(T[] arr) {

@@ -4,6 +4,11 @@ public class TestCase {
     private int[] nums;
     private int target;
     private char[] chars;
+    private String s;
+
+    public TestCase(String s) {
+        this.s = s;
+    }
     
     public TestCase(char[] chars) {
         this.chars = chars;
@@ -28,5 +33,9 @@ public class TestCase {
 
     public char[] getChars() {
         return chars;
+    }
+
+    public String getS() {
+        return s;
     }
 }
