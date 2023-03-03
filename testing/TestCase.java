@@ -5,9 +5,25 @@ public class TestCase {
     private int target;
     private char[] chars;
     private String s;
+    private String s2;
+    private int sr;
+    private int sc;
+    private int[][] matrix;
+
+    public TestCase(int[][] matrix, int sr, int sc, int color) {
+        this.matrix = matrix;
+        this.sr = sr;
+        this.sc = sc;
+        this.target = color;
+    }
 
     public TestCase(String s) {
         this.s = s;
+    }
+
+    public TestCase(String s1, String s2) {
+        this.s = s1;
+        this.s2 = s2;
     }
     
     public TestCase(char[] chars) {
@@ -37,5 +53,21 @@ public class TestCase {
 
     public String getS() {
         return s;
+    }
+
+    public String getS2() {
+        return s2;
+    }
+
+    public int getSr() {
+        return sr;
+    }
+
+    public int getSc() {
+        return sc;
+    }
+
+    public int[][] getMatrix() {
+        return matrix;
     }
 }

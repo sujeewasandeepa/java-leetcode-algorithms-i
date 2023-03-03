@@ -41,6 +41,31 @@ public class Main {
         String valRW = rw.reverseWords(rw.caseOne.getS());
         System.out.println("---- Reverse Words ----");
         System.out.println(valRW);
+
+        LongestSubstring.Solution ls = new LongestSubstring.Solution();
+        int valLS = ls.lengthOfLongestSubstring(ls.caseTwo.getS());
+        System.out.println("---- Longest Substring ----");
+        System.out.println(valLS);
+
+        PermutationInString.Solution pis = new PermutationInString.Solution();
+        boolean valPIS = pis.checkInclusion(pis.caseOne.getS(), pis.caseOne.getS2());
+        System.out.println("---- Permutation In String ----");
+        System.out.println(valPIS);
+
+        FloodFill.Solution ff = new FloodFill.Solution();
+        int[][] valFF = ff.floodFill(ff.caseOne.getMatrix(), ff.caseOne.getSr(), ff.caseOne.getSc(), ff.caseOne.getTarget());
+        System.out.println("---- Flood Fill ----");
+        printMatrix(valFF);
+
+    }
+
+    public static void printMatrix(int[][] arr) {
+        for (int[] row : arr) {
+            for (int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
     }
 
     public static <T> void printArray(T[] arr) {
