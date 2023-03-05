@@ -57,6 +57,17 @@ public class Main {
         System.out.println("---- Flood Fill ----");
         printMatrix(valFF);
 
+        MaxAreaOfIsland.Solution ma = new MaxAreaOfIsland.Solution();
+        int valMA = ma.maxAreaOfIsland(ma.caseOne.getMatrix());
+        System.out.println("---- Max Area Of Island ----");
+        System.out.println(valMA);
+
+
+        MergeTwoBinaryTrees.Solution mtbt = new MergeTwoBinaryTrees.Solution();
+        // MergeTwoBinaryTrees.TreeNode valMTBT = mtbt.mergeTrees(mtbt.root1, mtbt.root2);
+        System.out.println("---- Merge Two Binary Trees ----");
+        System.out.println("hard to test");
+
     }
 
     public static void printMatrix(int[][] arr) {
