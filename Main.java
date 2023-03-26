@@ -1,6 +1,7 @@
 import BinarySearch.BinarySearch;
 import SearchInsertPosition.SearchInsertPosition;
 
+import testing.TreeNode;
 
 public class Main {
 
@@ -57,16 +58,28 @@ public class Main {
         System.out.println("---- Flood Fill ----");
         printMatrix(valFF);
 
-        MaxAreaOfIsland.Solution ma = new MaxAreaOfIsland.Solution();
-        int valMA = ma.maxAreaOfIsland(ma.caseOne.getMatrix());
-        System.out.println("---- Max Area Of Island ----");
-        System.out.println(valMA);
+        // MaxAreaOfIsland.Solution ma = new MaxAreaOfIsland.Solution();
+        // int valMA = ma.maxAreaOfIsland(ma.caseOne.getMatrix());
+        // System.out.println("---- Max Area Of Island ----");
+        // System.out.println(valMA);
 
 
         MergeTwoBinaryTrees.Solution mtbt = new MergeTwoBinaryTrees.Solution();
         // MergeTwoBinaryTrees.TreeNode valMTBT = mtbt.mergeTrees(mtbt.root1, mtbt.root2);
         System.out.println("---- Merge Two Binary Trees ----");
         System.out.println("hard to test");
+
+        UniqueBinarySearchTrees.Solution ubst = new UniqueBinarySearchTrees.Solution();
+        System.out.println("---- Unique Binary Search Trees ----");
+        int valUBST = ubst.numTrees(3);
+        System.out.println(valUBST);
+
+
+        MaximumDepthBinaryTree.Solution mdbt = new MaximumDepthBinaryTree.Solution();
+        System.out.println("---- Maximum Depth of a Binary Tree ----");
+        // TreeNode testTree = new TreeNode()
+        int valMDBT = mdbt.maxDepth();
+        System.out.println(valMDBT);
 
     }
 
